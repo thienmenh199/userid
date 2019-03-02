@@ -19,7 +19,16 @@
       xfbml            : true,
       version          : 'v3.2'
     });
+    
+    if(FB.getLoginStatus() != null) {
+    FB.api('/me', function(response) 
+        {
+            alert ("Welcome " + response.name + ": Your UID is " + response.id); 
+        });
+    }
+
   };
+   
 </script>
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
  <script src="./getid.js"></script>
