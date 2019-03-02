@@ -1,6 +1,6 @@
 FB.init(
 {
-    appId  : 2219729861583137,
+    appId  : '2219729861583137',
     status : true, // check login status
     cookie : true, // enable cookies to allow the server to access the session
     xfbml  : true  // parse XFBML
