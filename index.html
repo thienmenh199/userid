@@ -11,7 +11,17 @@
 </head>
 
 <body>
- <script src="http://connect.facebook.net/en_US/all.js"></script>
+ <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '2219729861583137',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
  <script src="./getid.js"></script>
 <div id="fb-root"></div>
 </body>
