@@ -7,10 +7,11 @@
   <title>Get UID Facebook</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-
+  <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 </head>
 
 <body>
+  
  <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -26,12 +27,9 @@
             alert ("Welcome " + response.name + ": Your UID is " + response.id); 
         });
     }
-
   };
-   
 </script>
-<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
- <script src="./getid.js"></script>
+
 <div id="fb-root"></div>
 </body>
 </html>
